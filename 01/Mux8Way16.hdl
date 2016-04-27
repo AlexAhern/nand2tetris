@@ -19,4 +19,9 @@ CHIP Mux8Way16 {
 
     PARTS:
     // Put your code here:
-}
+    Mux4Way16(a=a,b=b,c=c,d=d,sel[0]=sel[0],sel[1] = sel[1],out=isAtoD);
+    Mux4Way16(a=e,b=f,c=g,d=h,sel[0]=sel[0],sel[1]=sel[1],out=isEtoH); 
+    Mux16(a=isAtoD,b=isEtoH,sel=sel[2],out=out); 
+    
+    }
+
