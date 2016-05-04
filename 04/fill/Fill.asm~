@@ -11,8 +11,8 @@
 // Put your code here.
 
 (START)
-@i //A=memory address
-M=0 //value of the memory address at A is 0
+@i
+M=0
 
 (LOOP)
 @24576
